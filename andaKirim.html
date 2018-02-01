@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anda Kirim</title>
+	<link rel="stylesheet" type="text/css" href="css/tentang.css">
+</head>
+<body>
+
+<!--Header-->
+<div id="header">
+	<div class="center">
+		<div class="logo"><img src="img/logosamping.png"></div>
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="tentang.html">Tentang</a></li>
+				<li><a href="surat.html">Surat</a></li>
+				<li><a href="dana.html">Dana Daerah</a></li>
+				<li><a href="login.html" class="login">Login</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--Header-->
+
+<!--Content-->
+<div id="kirim">
+	<div class="center">
+		<div class="title">Anda Ingin Mengirim Keluhan ?</div>
+		<div class="sub-title">Kami menyediakan jasa layanan keluhan rakyat yang mudah dipahami.</div>
+	</div>
+	<div class="clear"></div>
+	<div class="center" style="width: 50%;">
+		<div class="step">
+		<img src="img/foto.png" class="icon">
+		<div class="text">
+			<div class="title-text">Kirim foto bukti untuk kami.</div>
+			<div class="sub-text">Kirim minimal 1 foto, agar kami mengetahui kejadian yang terjadi sebenarnya.</div>
+		</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="center" style="width: 50%;">
+		<div class="step">
+			<img src="img/komen.png" class="icon">
+			<div class="text">
+				<div class="title-text">Sertakan komen dan deskripsi.</div>
+				<div class="sub-text">Agar kami bisa memahami dengan benar masalah yang terjadi.</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="center" style="width: 50%;">
+		<div class="step">
+			<img src="img/lokasi.png" class="icon">
+			<div class="text">
+				<div class="title-text">Sertakan lokasi daerah.</div>
+				<div class="sub-text">Agar kami dapat memberikan bantuan ke tempat yang tepat.</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="center" style="width: 50%; padding-bottom: 20px;">
+		<div class="step">
+			<img src="img/kirim.png" class="icon">
+			<div class="text">
+				<div class="title-text">Kirim</div>
+				<div class="sub-text">Sertakan nama masalah yang dikeluhkan, supaya kami dapat mengateforikannya.</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<!--Form Data-->
+	<div class="center" style="text-align: center; margin: 50px auto;">
+		<b class="btn" onclick="document.getElementById('form-input').style.display='block'">Lapor</b>
+	</div>
+	<div class="clear"></div>
+	<!--Modal Box-->
+	<div id="form-input" class="modal">
+	  <span onclick="document.getElementById('form-input').style.display='none'" class="close" title="Close Modal">&times;</span>
+	
+	  <!-- Modal Content -->
+	  <form class=" form modal-content animate" action="">
+	  	<div class="left">
+	    	<div class="imgContainer">
+	      		<img src="img/login-bg.jpg" alt="Avatar" class="avatar">
+	    	</div>
+	    	<div class="container">
+	     		<label><b>Jenis Keluhan</b></label>
+	     		<input type="text" placeholder="Enter Keluhan Anda" name="uname" required class="input">
+	    	</div>
+	    </div>
+	    <div class="right">
+			<div class="container">
+			<label><b>E-mail</b></label>
+	    	<input type="text" size="35" placeholder="Enter e-mail" name="psw" required class="input">
+	    	<label><b>Lokasi</b></label>
+	    	<input type="text" size="35" placeholder="Enter Lokasi" name="psw" required class="input">
+	    	<label><b>Deskripsi</b></label>
+	    	<textarea rows="10" cols="35" placeholder="Enter Deskripsi" class="input"></textarea>
+	    	</div>
+		</div>
+		<div class="container">
+	    <button type="submit">Lapor</button>
+	    <div class="container" style="background-color:#f1f1f1">
+	      <button type="button" onclick="document.getElementById('form-input').style.display='none'" class="cancelbtn">Cancel</button>
+	    </div>
+	  </form>
+	</div>
+	<!--Form Data-->
+</div>
+<!--Content-->
+
+<!--Footer-->
+<div id="footer">
+	<div class="center">
+		<div class="logo"><img src="img/logosamping.png"></div>
+		<div class="cp">All Right Reserved 2017</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--Footer-->
+
+	<script type="text/javascript">
+		// Get the modal
+		var modal = document.getElementById('form-input');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+    		if (event.target == modal) {
+        		modal.style.display = "none";
+    		}
+		}
+	</script>
+
+</body>
+</html>

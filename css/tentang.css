@@ -1,0 +1,531 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway","Segoe UI",sans-serif,arial;
+}
+* {box-sizing:border-box}
+
+.center{
+  width: 1248px;
+  margin: 0 auto;
+  padding: 0;
+}
+.clear{
+  float: none;
+  clear: both;
+}
+
+#header{
+  padding: 10px 0;
+  margin: 0;
+  background-color: #39785e;
+}
+#header .logo{
+  float: left;
+  padding: 5px 0;
+  margin: 0;
+  color: #fff;
+}
+#header .menu{
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+#header .menu ul{
+  padding: 0;
+  margin: 0;
+}
+#header .menu ul li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#header .menu ul li a{
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+  transition: .4s;
+}
+#header .menu ul li a:hover{
+  color: #111;
+  background-color: #fff
+}
+#header .login{
+  cursor: pointer;
+  display: inline-block;
+  color: #2e4d3f;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0;
+  border-radius: 5px;
+  transition: .4s;
+}
+#header .login:hover{
+  color: #222;
+  background-color: #438b6e;
+}
+#bg{
+	padding: 0;
+  margin: 0;
+}
+#bg a{
+  text-decoration: none;
+  color: #fff;
+}
+#bg .slide_show{
+	padding: 0;
+  margin: 0;
+}
+#bg .slideshow-container {
+  height: 300px;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+#bg .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+#bg .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#bg .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+#bg .text_slideShow {
+  font-size: 26px;
+  margin: auto;
+  padding-top: 150px; 
+  display: none;
+  text-align: center;
+  color: #fff;
+}
+#bg .dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 70px 2px 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#bg .active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+#bg .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#content{
+  padding: 0;
+  margin: 0;
+}
+#content .gambar{
+  width: 40%;
+  float: left;
+  padding: 25px;
+  margin: 0;
+}
+#content .text{
+  margin: 0;
+  color: #000;
+  margin: auto;
+  padding: 25px;
+  font-size: 16px;
+  line-height: 26px;
+}
+#content .text p{
+  margin: 5px;
+  padding: 25px;
+}
+
+/*Anda kirim*/
+#kirim{
+  padding-top: 50px;
+  margin: 0;
+  background-color: #f1f1f1;
+}
+#kirim .title{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+}
+#kirim .sub-title{
+  text-align: center;
+  margin: 0;
+  padding: 20px 0 50px 0;
+  color: #444444;
+  font-size: 18px;
+}
+#kirim .step{
+  padding: 0;
+  margin: 20px 0;
+  overflow: hidden;
+}
+#kirim .icon{
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+#kirim .text{
+  padding: 0;
+  margin: 0 0 0 50px;
+  float: left;
+}
+#kirim .title-text{
+  padding: 15px 0 5px 0;
+  font-size: 26px;
+  color: #222;
+}
+#kirim .sub-text{
+  font-size: 14px;
+  color: #4a4a4a;
+}
+#kirim .btn, .tombol{
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 250px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+#kirim .tombol{
+  padding: 15px 0;
+  width: 100%;
+}
+#kirim .btn:hover{
+  opacity: 0.8;
+}
+#kirim .tombol:hover{
+  opacity: 0.8;
+}
+#kirim .box-surat{
+  width: 1000px;
+  margin: auto;
+  padding: 0;
+}
+#kirim .surat{
+  padding: 0;
+  margin: 0 20px 90px 20px;
+  width: 285px;
+  height: 312px;
+  float: left;
+  text-align: center;
+}
+#kirim .surat-icon{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#kirim .surat-title{
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+#kirim .surat-content{
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#form-input{
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+#form-modalUsaha{
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+#form-hilang{
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+#form-ektp{
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+.form{
+    border: 3px solid #f1f1f1;
+}
+.input, .insert{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.insert{
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover{
+    opacity: 0.8;
+}
+.cancelbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    font-size: 14px;
+}
+
+.left{
+  width: 50%;
+  height: 100%;
+  padding-top: 10px;
+  float: left;
+}
+.imgContainer{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+img.avatar{
+    width: 80%;
+}
+.container{
+    padding: 16px;
+}
+span.psw{
+    float: right;
+    padding-top: 16px;
+}
+.right{
+  padding-top: 25px;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content{
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close{
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus{
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+#grafik{
+  padding-bottom: 50px;
+  margin: 0;
+}
+#grafik .title{
+  padding-top: 50px;
+  margin: 0;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+}
+#grafik .sub-title{
+  padding-top: 20px;
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  text-align: center;
+}
+#grafik .judul{
+  padding-top: 50px;
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+#grafik .grafik-data{
+  width: 50%;
+  padding: 20px 0;
+  margin: auto;
+}
+#grafik .dana-grafik{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#grafik .content{
+  width: 45%;
+  margin-top: 50px;
+  text-align: center;
+  display: inline-block;
+}
+#grafik .btn{
+  padding: 15px 50px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #39785e;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: .4s;
+}
+#grafik .tabel-bg{
+  margin: auto;
+  border-radius: 5px;
+  background-image: url(../img/tabel-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 45%;
+  color: #f1f1f1;
+  margin-top: 50px;
+  float: left;
+  transition: .4s;
+}
+#grafik .tabel-bg:hover{
+  box-shadow: 0 5px 40px 10px rgba(0,0,0,0.1);
+}
+#grafik .circle{
+  width: 35px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f05b6f;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 18px;
+}
+#grafik .tabel{
+  padding: 20px 50px 20px 50px;
+}
+#grafik .diagram{
+  width: 345px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+}
+
+/*footer*/
+#footer{
+  padding: 10px 0;
+  margin: 0;
+  background-color: #2e4d3f;
+}
+#footer .logo{
+  float: left;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+#footer .cp{
+  float: right;
+  margin-top: 20px;
+  padding: 0;
+  color: #fff;
+}

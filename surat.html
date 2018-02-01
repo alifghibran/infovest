@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Surat</title>
+	<link rel="stylesheet" type="text/css" href="css/tentang.css">
+</head>
+<body>
+<div id="header">
+	<div class="center">
+		<div class="logo"><img src="img/logosamping.png"></div>
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="tentang.html">Tentang</a></li>
+				<li><a href="surat.html">Surat</a></li>
+				<li><a href="dana.html">Dana Daerah</a></li>
+				<li><a href="login.html" class="login">Login</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<div id="kirim">
+	<div class="center">
+		<div class="title">Sarana Mempermudah Urusan Surat Anda</div>
+		<div class="sub-title">Kami mnyediakan sarana surat menyurat dengan pemerintah yang memudah anda.</div>
+	</div>
+	<div class="clear"></div>
+	<div class="center">
+		<div class="box-surat">
+		<div class="surat">
+			<div class="center">
+				<div class="surat-icon">
+					<img src="img/barangHilang.png" class="icon" style="margin-left: 100px;">
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="surat-title">Barang Hilang</div>
+			<div class="surat-content">
+				Jika anda merasa kehilangan barang maka anda bisa membuat surat pernyatan "Kehilangan Barang" hanya dengan mengisi form yang kami sediakan dengan data yang benar.
+			</div>
+			<div class="tombol" onclick="document.getElementById('form-hilang').style.display='block'">Buat</div>
+		</div>
+		<div class="surat">
+			<div class="center">
+				<div class="surat-icon">
+					<img src="img/eKTP.png" class="icon" style="margin-left: 100px;">
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="surat-title">E-KTP</div>
+			<div class="surat-content">
+				Jika anda merasa kehilangan barang maka anda bisa membuat surat pernyatan "Kehilangan Barang" hanya dengan mengisi form yang kami sediakan dengan data yang benar.
+			</div>
+			<div class="tombol" onclick="document.getElementById('form-hilang').style.display='block'">Buat</div>
+		</div>
+		<div class="surat">
+			<div class="center">
+				<div class="surat-icon">
+					<img src="img/modalUsaha.png" class="icon" style="margin-left: 100px;">
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="surat-title">Modal Usaha</div>
+			<div class="surat-content">
+				Jika anda merasa kehilangan barang maka anda bisa membuat surat pernyatan "Kehilangan Barang" hanya dengan mengisi form yang kami sediakan dengan data yang benar.
+			</div>
+			<div class="tombol" onclick="document.getElementById('form-hilang').style.display='block'">Buat</div>
+		</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<div id="footer">
+	<div class="center">
+		<div class="logo"><img src="img/logosamping.png"></div>
+		<div class="cp">All Right Reserved 2017</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<!--Modal Surat-->
+<div id="form-hilang" class="modal">
+	<span onclick="document.getElementById('form-hilang').style.display='none'" class="close" title="Close Modal">&times;</span>
+ 	<form class=" form modal-content animate" action="">
+  		<div class="left">
+   			<div class="imgContainer">
+   		  		<img src="img/hilang.jpg" alt="Avatar" class="avatar">
+   			</div>
+   			<div class="container">
+   		 		<label><b>Jenis Surat</b></label>
+   		 		<select>
+   		 			<option>Surat Keterangan Hilang</option>
+   		 			<option>Surat Permohonan Pembuatan E-KTP</option>
+   		 			<option>Surat Keterangan Usaha</option>
+   		 		</select>
+   			</div>
+   		</div>
+   		<div class="right">
+			<div class="container">
+				<table border="0">
+					<tr>
+						<td><b>Nama</b></td>
+						<td>:</td>
+						<td><input type="text" size="35" placeholder="Enter e-mail" name="psw" required class="insert"></td>
+					</tr>
+					<tr>
+						<td><b>Ttl</b></td>
+						<td>:</td>
+						<td><input type="text" size="35" placeholder="Enter e-mail" name="psw" required class="insert"></td>
+					</tr>
+					<tr>
+						<td><b>Jenis Kelamin</b></td>
+						<td>:</td>
+						<td><input type="radio" required value="Laki-Laki">Laki-Laki
+							<input type="radio" required value="Perempuan">Perempuan</td>
+					</tr>
+					<tr>
+						<td><b>Pekerjaan</b></td>
+						<td>:</td>
+						<td><input type="text" size="25" placeholder="Enter e-mail" name="psw" required class="insert"></td>
+					</tr>
+					<tr>
+						<td><b>Agama</b></td>
+						<td>:</td>
+						<td><select>
+							<option>Islam</option>
+							<option>Kristen</option>
+							<option>Hindu</option>
+							<option>Budha</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><b>Alamat</b></td>
+						<td>:</td>
+						<td><textarea rows="10" cols="35" placeholder="Enter Deskripsi" class="insert"></textarea></td>
+					</tr>
+   				</table>
+   			</div>
+		</div>
+		<div class="container">
+   			<button type="submit">Buat</button>
+   			<div class="container" style="background-color:#f1f1f1">
+   		  	<button type="button" onclick="document.getElementById('form-hilang').style.display='none'" class="cancelbtn">Cancel</button>
+   		</div>
+ 	</form>
+</div>
+<!--Modal surat-->
+
+<script type="text/javascript">
+		var modalHilang = document.getElementById('form-hilang');
+		window.onclick = function(event) {
+    		if (event.target == modalHilang) {
+        		modalHilang.style.display = "none";
+    		}
+		}
+</script>
+</body>
+</html>

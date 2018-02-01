@@ -1,0 +1,92 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Aleo";
+}
+.center{
+	width: 1350px;
+	margin: 0;
+	padding: 0;
+}
+.clear{
+	float: none;
+	clear: both;
+}
+
+#content{
+	padding: 0;
+	margin: 0;
+	height: 660px;
+	background-image: url(../img/proses.png);
+	background-position: center;
+	background-size: auto;
+}
+#content .title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
+	color: #a4a6a9;
+	padding-top: 300px;
+	margin: center;
+}
+#content .sub-title{
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	color: #a4a6a9;
+	padding-top: 20px;
+	margin: auto;
+	margin-bottom: 96px;
+}
+@media screen and (max-width: 1350px){
+	.center{
+		width: auto;
+		padding: 0 100px;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 705px){
+	#content .logo{
+		float: none;
+		margin: 0;
+		text-align: center;
+		transition: 1s;
+	}
+	#content .menu{
+		float: none;
+		margin: 0;
+		text-align: center;
+		transition: 1s;
+	}
+	#content .title{
+		font-size: 30px;
+	}
+	#content .sub-title{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 595px){
+	#content .title{
+		font-size: 28px;
+	}
+	#content .sub-title{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 559px){
+	#content .title{
+		font-size: 26px;
+	}
+	#content .sub-title{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 522px){
+	#content .title{
+		font-size: 24px;
+	}
+	#content .sub-title{
+		font-size: 12px;
+	}
+}
+}

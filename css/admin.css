@@ -1,0 +1,106 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Raleway","Segoe UI", sans-serif, arial;
+}
+.center{
+	width: 1248px;
+	margin: 0 auto;
+	padding: 0;
+}
+.clear{
+	float: none;
+	clear: both;
+}
+
+#content-admin{
+	padding: 0;
+	margin: 0;
+}
+#content-admin a{
+	color: #000;
+	text-decoration:  none;
+}
+#content-admin .box{
+	width: 265px;
+	height: 300px;
+	margin: 0 20px;
+	margin-top: 50px;
+	padding: 0;
+	display: inline-block;
+}
+#content-admin .image{
+	width: 265px;
+	height: 200px;
+	padding: 0;
+	margin: 0;
+}
+#content-admin .content{
+	width: 265px;
+	height: 100px;
+	padding: 10px;
+	margin: 0;
+	font-size: 12px;
+	background-color: #f1f1f1;
+}
+#content-admin .content b{
+	margin: 0;
+	font-size: 18px;
+	margin: auto;
+}
+#content-admin .content table{
+	margin-top: 10px;
+}
+
+#detail-laporan{
+	padding: 50px 0;
+	margin: 0;
+}
+#detail-laporan b{
+	font-size: 24px;
+	margin: auto;
+}
+#detail-laporan .image{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0;
+}
+#detail-laporan .img{
+	width: 600px;
+	height: 400px;
+	padding: 0;
+	margin: auto;
+}
+#detail-laporan .content{
+	margin: 0 auto;
+	padding: 0;
+	padding-bottom: 0;
+}
+#detail-laporan .title{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 50px;
+}
+#detail-laporan span{
+	padding-left: 50px;
+}
+#detail-laporan table{
+	margin-top: 30px; 
+	font-size: 14px;
+	color: #aaaaaa;
+	display: inline-block;
+}
+#detail-laporan .btn{
+	padding: 10px 40px;
+	margin: 45px 0;
+	background-color: #4CAF50;
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	float: right;
+}
+#detail-laporan .btn:hover{
+	opacity: .8;
+}
